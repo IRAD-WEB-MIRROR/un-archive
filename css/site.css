@@ -1,0 +1,69 @@
+*,*::before,*::after{box-sizing:border-box}html{-webkit-text-size-adjust:100%}body{margin:0}
+img{max-width:100%;height:auto;display:block}a{color:inherit}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+.ico{width:1em;height:1em;vertical-align:-.12em;fill:currentColor}
+a:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,textarea:focus-visible{outline:2px solid currentColor;outline-offset:2px}
+
+.un{--cloth:#7c2433;--leaf:#f7f4f0;--ink:#231d1f;--rule:#d8cfcc;--app:#5f5456;background:var(--leaf);color:var(--ink);font:17px/1.6 'Gentium Book Plus',Georgia,serif;min-height:100vh;display:flex;flex-direction:column}
+.un ::selection{background:#ecd3d6}
+.un .pad{padding-inline:max(16px,4%)}
+.un .band{background:var(--cloth);color:#f6ecea;padding:16px max(16px,4%);display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 18px;align-items:center}
+.un .band a{text-decoration:none}
+.un .band .nm{display:flex;align-items:center;gap:14px;font:700 24px/1.2 'Gentium Book Plus',serif}
+.un .band .nm svg{width:62px;height:auto;flex:none}
+.un .band small{font:400 12px 'Azeret Mono',monospace;letter-spacing:.04em;color:#f0d9d6}
+.un nav.top{display:flex;flex-wrap:wrap;gap:4px 22px;padding:10px max(16px,4%);border-bottom:1px solid var(--rule);font:400 13px 'Azeret Mono',monospace}
+.un nav.top a{color:var(--app);text-decoration:none;padding:4px 0;border-bottom:2px solid transparent}
+.un nav.top a:hover{color:var(--ink)}
+.un nav.top a[aria-current]{color:var(--cloth);border-color:var(--cloth);font-weight:600}
+.un .find{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:8px;padding:18px max(16px,4%) 8px}
+.un .find input{font:17px 'Gentium Book Plus',serif;padding:9px 11px;border:1px solid #9b8f91;background:#fff;color:var(--ink);min-width:0}
+.un .find input:focus{border-color:var(--cloth);outline:2px solid var(--cloth);outline-offset:0}
+.un .find button,.un .btn{font:600 12px 'Azeret Mono',monospace;letter-spacing:.06em;background:var(--cloth);color:#fff;border:0;padding:10px 16px;cursor:pointer;text-decoration:none;display:inline-block}
+.un .find button:hover,.un .btn:hover{background:#5f1a27}
+.un .count{padding:0 max(16px,4%);font-size:14px;color:var(--app);font-style:italic;margin:4px 0}
+.un .vols{display:flex;flex-wrap:wrap;gap:4px 16px;padding:12px max(16px,4%) 0;border-bottom:1px solid var(--rule)}
+.un .vols button{font:400 12px 'Azeret Mono',monospace;color:var(--app);background:none;border:0;border-bottom:2px solid transparent;padding:6px 0 8px;cursor:pointer}
+.un .vols button:hover{color:var(--ink)}
+.un .vols button[aria-pressed="true"]{color:var(--cloth);font-weight:600;border-color:var(--cloth)}
+.un .entry{display:grid;grid-template-columns:150px minmax(0,1fr);gap:24px;padding:26px max(16px,4%) 24px;border-bottom:1px solid var(--rule)}
+@media (max-width:640px){.un .entry{grid-template-columns:minmax(0,1fr);gap:10px}}
+.un .siglum{font:600 14px/1.6 'Azeret Mono',monospace;color:var(--cloth);font-variant-numeric:tabular-nums}
+.un .siglum small{display:block;font-weight:400;font-size:12px;color:var(--app)}
+.un .entry h2,.un .entry h1{font:700 24px/1.25 'Gentium Book Plus',serif;margin:0;text-wrap:balance}
+.un .entry h1{font-size:32px}
+.un .entry h2 a{text-decoration:none}.un .entry h2 a:hover{text-decoration:underline;text-decoration-color:var(--cloth)}
+.un .entry .who{font-style:italic;margin:2px 0 12px;color:#3c3335}
+.un .verse{display:grid;grid-template-columns:34px minmax(0,1fr);font-size:16px;line-height:1.75;max-width:62ch}
+.un .verse span:nth-child(odd){font:400 11px/2.4 'Azeret Mono',monospace;color:var(--app);text-align:right;padding-right:12px}
+.un .listen{display:grid;grid-template-columns:auto minmax(0,1fr) auto;align-items:center;gap:12px;margin:12px 0 6px;max-width:62ch}
+.un .listen button{display:inline-flex;align-items:center;gap:6px;font:600 12px 'Azeret Mono',monospace;background:var(--ink);color:var(--leaf);border:0;padding:7px 11px;cursor:pointer}
+.un .listen button:hover{background:var(--cloth)}
+.un .listen input[type=range]{width:100%;accent-color:var(--cloth)}
+.un .listen output{font:12px 'Azeret Mono',monospace;color:var(--app);font-variant-numeric:tabular-nums}
+.un .note{font-size:14px;color:var(--app);font-style:italic;margin:0 0 8px;max-width:62ch}
+.un .app{font-size:14px;color:var(--app);border-top:1px solid var(--rule);margin-top:12px;padding-top:8px;max-width:62ch}
+.un .app sup{color:var(--cloth)}
+.un main{flex:1}
+.un .prose{max-width:66ch;padding:10px max(16px,4%) 30px}
+.un .prose h1{font:700 34px/1.2 'Gentium Book Plus',serif;margin:24px 0 10px;text-wrap:balance}
+.un .prose h2{font:700 22px/1.3 'Gentium Book Plus',serif;margin:30px 0 6px}
+.un .prose p{margin:0 0 14px}
+.un .lede{font-size:20px;line-height:1.5}
+.un table{border-collapse:collapse;width:100%;font-size:15px}
+.un th{font:600 11px 'Azeret Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:var(--app);text-align:left;padding:8px 10px;border-bottom:2px solid var(--ink)}
+.un td{padding:9px 10px;border-bottom:1px solid var(--rule);vertical-align:top}
+.un td.s{font:600 13px 'Azeret Mono',monospace;color:var(--cloth);white-space:nowrap}
+.un td.n{font:12px 'Azeret Mono',monospace;color:var(--app);white-space:nowrap;text-align:right}
+.un .tw{overflow-x:auto;padding:0 max(16px,4%) 30px}
+@media (max-width:640px){.un .hide-s{display:none}}
+.un dl.facts{display:grid;grid-template-columns:auto minmax(0,1fr);gap:6px 18px;margin:10px 0 20px}
+.un dl.facts dt{font:600 12px/1.9 'Azeret Mono',monospace;color:var(--app)}
+.un dl.facts dd{margin:0}
+.un form.req{display:grid;gap:12px;max-width:520px;margin:10px 0 30px}
+.un form.req label{display:grid;gap:4px;font:600 12px 'Azeret Mono',monospace;color:var(--app)}
+.un form.req input,.un form.req select,.un form.req textarea{font:16px 'Gentium Book Plus',serif;padding:8px 10px;border:1px solid #9b8f91;background:#fff;color:var(--ink)}
+.un .msg{font-style:italic;min-height:1.6em;margin:0}
+.un .msg.err{color:#8e1d2c}
+.un footer{background:#efe9e3;border-top:1px solid var(--rule);padding:22px max(16px,4%);font-size:14px;color:var(--app);display:grid;gap:6px}
+.un footer a{color:var(--ink)}
